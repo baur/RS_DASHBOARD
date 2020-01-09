@@ -1,0 +1,62 @@
+/*DARK THEME*/
+
+#chart1 svg {
+    background-color: #212124;
+}
+
+#chart2 svg {
+    background-color: #212124;
+}
+
+#chart3 svg {
+    background-color: #212124;
+}
+
+#chart4 svg {
+    background-color: #212124;
+}
+
+#chart5 svg {
+    background-color: #212124;
+}
+
+path.domain {
+    stroke: white;
+}
+
+.tick text {
+    fill: white;
+}
+
+.c3-legend-item text {
+    fill: white;
+    font-size: 16px;
+}
+
+.c3-chart-arc .c3-gauge-value {
+    fill: white;
+}
+
+.c3-chart-arc .c3-gauge-text {
+    fill: white;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-min {
+    fill: white;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-max {
+    fill: white;
+}
+
+.c3-axis-y text {
+    font-size: 15px;
+}
+
+.c3-axis-x text {
+    font-size: 15px;
+}
+
+.c3-chart-arcs-gauge-unit {
+    fill:white !important; 
+}

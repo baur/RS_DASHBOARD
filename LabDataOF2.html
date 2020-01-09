@@ -1,0 +1,64 @@
+<!--
+https://stackoverflow.com/questions/43646263/cant-get-c3-chart-to-render-using-vue-js
+https://codepen.io/Kradek/pen/qmRRpd?editors=1010
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/vendor/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link href="css/vendor/c3.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/vendor/d3-5.8.2.min.js" charset="utf-8"></script>
+    <script src="js/vendor/c3.min.js"></script>
+
+</head>
+
+<body style="background-color: #161719;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="padding-bottom: 10px">
+                <div id=""><span style="color: white; text-align:center">
+                        <h4>Объем переработки руды</h4>
+                    </span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="padding-bottom: 10px">
+                <div id="chart3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div id="chart1"></div>
+            </div>
+            <div class="col-3">
+                <div id="chart2"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="js/script.js">
+</script>
+<script src="js/rapidScadaRestAPI.js">
+</script>
+<script src="js/vendor/jquery-3.4.1.slim.min.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script>
+GetCurCnlHourData(chart3, 3150);
+    setInterval(function () {
+        GetCurCnlData(chart1, 2334);
+        GetCurCnlData(chart2, 2331);
+    }, 1000);
+</script>
+<!--<script src="js/load.js">-->
+
